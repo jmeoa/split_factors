@@ -1,0 +1,14 @@
+digraph flotacion {
+    rankdir=LR;
+    node [shape=box, style=filled, fillcolor=white];
+
+    Feed -> Rougher;
+    Rougher -> Cleaner [label="Conc. R"];
+    Rougher -> Scavenger [label="Cola R"];
+    Scavenger -> Rougher [style=dashed, label="Conc. S → R"];
+    Scavenger -> "Relave Final";
+    Cleaner -> Recleaner [label="Conc. C"];
+    Recleaner -> "Concentrado Final";
+    Recleaner -> Cleaner [style=dashed, label="Cola RC → C"];
+    Recleaner -> Rougher [style=dashed, label="Cola RC → R"];
+}

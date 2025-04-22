@@ -1,0 +1,10 @@
+Desde,Hacia,Tipo de flujo
+Feed,Rougher,alimentación
+Rougher,Cleaner,concentrado
+Rougher,Scavenger,relave
+Scavenger,Rougher,recirculación
+Scavenger,Relave Final,relave
+Cleaner,Recleaner,concentrado
+Recleaner,Concentrado Final,concentrado
+Recleaner,Cleaner,recirculación
+Recleaner,Rougher,recirculación
